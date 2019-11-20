@@ -1,8 +1,10 @@
 import numpy as np
 from utils import drawRRrobot,bruteforce_search,numeric_IK
 from mpl_toolkits import mplot3d
-
-
+'''
+This is primarily for demonstrate Newton's method and Gradient descend
+in solving inverse kinematics of RR robot.
+'''
 # end effector destination position
 xd = np.array([1.2, 1.2])
 # initial value of theta1, theta2
