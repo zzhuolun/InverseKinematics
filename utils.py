@@ -80,11 +80,11 @@ def numeric_IK(xd, q, isNewton, epsilon, max_iter):
         if isNewton:
             # Newton' Method
             plt.pause(1)
-            q = q + np.dot(np.linalg.inv(J), e)
+            q = q + np.dot(np.linalg.inv(J), e) #do the iteration
         else:
             # Gradient decent
             plt.pause(0.01)
-            q = q + 0.1 * np.dot(np.transpose(J), e)
+            q = q + 0.1 * np.dot(np.transpose(J), e) #do the iteration
         if np.linalg.norm(e) < epsilon:
             plt.pause(3)
             return q,i
