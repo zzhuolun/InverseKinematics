@@ -5,3 +5,5 @@ virtualenv/
 __pycache__/
 .idea/*
 *.xml
+*.pyc
+*.iml
